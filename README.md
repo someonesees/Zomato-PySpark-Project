@@ -16,3 +16,9 @@
    - Ensure categorical variables are encoded properly if needed (e.g., one-hot encoding for categorical features).
 
 
+#### 4. **Window Functions**
+   - Apply window functions to perform calculations over partitions of the data.
+   - Example window functions:
+     - Calculate moving averages of ratings or votes.
+     - Rank restaurants within each locality based on ratings or votes.
+     - Compute top-N restaurants in each city based on specific criteria.
