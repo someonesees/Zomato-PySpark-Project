@@ -1,12 +1,13 @@
 # Zomato-PySpark-Project
 
-#### This project not only explores the capabilities of PySpark for data manipulation and analysis but also integrates advanced techniques to derive meaningful insights from the Zomato dataset. Depending on your interests and objectives, you can emphasize different aspects such as visualization, modeling, or deployment to make the project more comprehensive and impactful.
+#### This project involves analyzing a Zomato dataset to understand restaurant trends and customer preferences across different countries. The analysis includes data cleaning, merging datasets, performing transformations such as aggregations and feature engineering, and applying lead and lag functions for trend prediction. Key insights include average cost and rating comparisons, customer engagement levels, and service availability across countries. The lead and lag analysis further provides valuable predictions on future trends in pricing and customer satisfaction, enabling strategic decision-making for restaurant management.
 
 ### Project Outline
 
 #### 1. Introduction
    - Project Title: Zomato Dataset Analysis
-   - Description: This project involves data loading, exploration, cleaning, and analysis of a Zomato dataset using PySpark. The goal is to derive insights and perform                          various data transformations.
+   - Description: This project involves data loading, exploration, cleaning, and analysis of a Zomato dataset using PySpark. The goal is to derive insights and perform       
+                  various data transformations, including optimizing joins with broadcast joins and flattening nested JSON structures and using advance transformations like                     lead and lag.
 
 #### 2. Prerequisites
    - Libraries and Tools:
@@ -31,9 +32,9 @@
    - Utilize PySpark functions to recursively extract and flatten nested fields, ensuring that each nested field is accessible as a top-level column in the resulting               DataFrame.
 
 ##### 5.2. Broadcast Join 
-    - To efficiently join two DataFrames in PySpark using broadcast join
-    - Applied broadcast join to perform join for country name dataset.
-    - It optimizes performance by broadcasting the smaller DataFrame to all worker nodes, reducing the amount of data shuffled across the network during the join operation.
+   - To efficiently join two DataFrames in PySpark using broadcast join
+   - Applied broadcast join to perform join for country name dataset.
+   - It optimizes performance by broadcasting the smaller DataFrame to all worker nodes, reducing the amount of data shuffled across the network during the join operation.
 
 ##### 5.3. Column Selection and Renaming
    - Selected specific columns and rename them.
@@ -69,3 +70,25 @@
 ##### 5.10. Lead and Lag
    - To Access subsequent (lead) and preceding (lag) row values within a specified window, enabling advanced comparative analysis across rows, such as identifying trends           or changes in ratings over time or sequence.
    - Utilized PySpark's lead and lag functions within a Window specification to create new columns that store the next and previous ratings, respectively, facilitating             enhanced row-wise comparisons and insights.
+     
+#### 6. Visualization
+   - Visualization Tools:
+        - Databricks built-in visualizations.
+
+#### 8. Conclusions
+   - The average cost for two in the USA is lower compared to the UK and India. This suggests that dining out might be more affordable in the USA.
+   - The average rating of restaurants is highest in the USA, indicating higher customer satisfaction compared to India and the UK.
+   - The total votes show that restaurants in India receive the highest customer engagement, followed by the UK and the USA.
+   - Table booking availability is highest in the UK, suggesting a preference for reserved dining experiences.
+   - Online delivery services are more available in India, reflecting a higher demand for food delivery options.
+
+##### 8.1. **Trend Prediction**:
+   - The lead values for the average cost indicate that costs are expected to rise in certain countries such as the UK, while in others like the USA, they might remain stable      or decrease.
+   - By analyzing lag values, we can confirm whether the historical trend matches the projected trend.
+
+##### 8.2. **Customer Satisfaction**:
+   - Lead values for ratings suggest that customer satisfaction is likely to improve in countries like India, while it might decline in the UK.
+   - Lag values provide a historical perspective, helping us understand whether the changes in ratings are consistent with past trends.
+
+##### 8.3. **Strategic Decisions**:
+   - Restaurants can use these insights to make strategic decisions such as adjusting pricing or focusing on improving customer service in countries where future ratings are expected to decline.
