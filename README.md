@@ -4,6 +4,18 @@
 
 ### Project Outline
 
+#### 1. Introduction
+   - Project Title: Zomato Dataset Analysis
+   - Description: This project involves data loading, exploration, cleaning, and analysis of a Zomato dataset using PySpark. The goal is to derive insights and perform                          various data transformations.
+
+#### 2. Prerequisites
+   - Libraries and Tools:
+   - PySpark
+   - Python
+   - Jupyter Notebook or Databricks environment
+
+
+
 #### 1. **Data Exploration and Cleaning**
    - Load the Zomato dataset into a PySpark DataFrame.
    - Explore the schema and understand the data types.
