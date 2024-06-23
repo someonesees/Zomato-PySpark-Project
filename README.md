@@ -25,8 +25,17 @@
    - Select relevant features for the project (e.g., restaurant ID, location, cuisine, ratings).
    - Ensure categorical variables are encoded properly if needed (e.g., one-hot encoding for categorical features).
 
-#### Transformations
-##### 5.1 **Window Functions**
+#### 5. **Transformations**
+##### 5.1. Flattening the nested JSON
+   - Transform the nested JSON structure into a flat DataFrame to simplify data processing and analysis by converting nested fields into separate columns.
+   - Utilize PySpark functions to recursively extract and flatten nested fields, ensuring that each nested field is accessible as a top-level column in the resulting DataFrame.
+
+##### 5.2. Broadcast Join 
+   - To efficiently join two DataFrames in PySpark using broadcast join
+   - Applied broadcast join to perform join for country name dataset.
+   - It optimizes performance by broadcasting the smaller DataFrame to all worker nodes, reducing the amount of data shuffled across the network during the join operation.
+     
+##### 5.3. **Window Functions**
    - Apply window functions to perform calculations over partitions of the data.
    - Example window functions:
      - Calculate moving averages of ratings or votes.
