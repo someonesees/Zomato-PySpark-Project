@@ -25,8 +25,8 @@
    - Select relevant features for the project (e.g., restaurant ID, location, cuisine, ratings).
    - Ensure categorical variables are encoded properly if needed (e.g., one-hot encoding for categorical features).
 
-
-#### 4. **Window Functions**
+#### Transformations
+##### 5.1 **Window Functions**
    - Apply window functions to perform calculations over partitions of the data.
    - Example window functions:
      - Calculate moving averages of ratings or votes.
