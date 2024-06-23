@@ -14,15 +14,13 @@
    - Python
    - Jupyter Notebook or Databricks environment
 
-
-
-#### 1. **Data Exploration and Cleaning**
+#### 3. **Data Exploration and Cleaning**
    - Load the Zomato dataset into a PySpark DataFrame.
    - Explore the schema and understand the data types.
    - Check for missing values, handle them appropriately (e.g., imputation or removal).
    - Convert relevant columns to appropriate data types (e.g., numeric fields).
 
-#### 2. **Data Preparation**
+#### 4. **Data Preparation**
    - Preprocess the data for analysis and modeling.
    - Select relevant features for the project (e.g., restaurant ID, location, cuisine, ratings).
    - Ensure categorical variables are encoded properly if needed (e.g., one-hot encoding for categorical features).
