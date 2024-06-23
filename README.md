@@ -75,20 +75,23 @@
    - Visualization Tools:
         - Databricks built-in visualizations.
 
-#### 8. Conclusions
+#### 7. Conclusions
    - The average cost for two in the USA is lower compared to the UK and India. This suggests that dining out might be more affordable in the USA.
    - The average rating of restaurants is highest in the USA, indicating higher customer satisfaction compared to India and the UK.
    - The total votes show that restaurants in India receive the highest customer engagement, followed by the UK and the USA.
    - Table booking availability is highest in the UK, suggesting a preference for reserved dining experiences.
    - Online delivery services are more available in India, reflecting a higher demand for food delivery options.
 
-##### 8.1. **Trend Prediction**:
+##### 7.1. **Trend Prediction**:
    - The lead values for the average cost indicate that costs are expected to rise in certain countries such as the UK, while in others like the USA, they might remain stable      or decrease.
    - By analyzing lag values, we can confirm whether the historical trend matches the projected trend.
 
-##### 8.2. **Customer Satisfaction**:
+##### 7.2. **Customer Satisfaction**:
    - Lead values for ratings suggest that customer satisfaction is likely to improve in countries like India, while it might decline in the UK.
    - Lag values provide a historical perspective, helping us understand whether the changes in ratings are consistent with past trends.
 
-##### 8.3. **Strategic Decisions**:
+##### 7.3. **Strategic Decisions**:
    - Restaurants can use these insights to make strategic decisions such as adjusting pricing or focusing on improving customer service in countries where future ratings are expected to decline.
+
+
+# This Helped in understanding the Funtionality with some Advanced Transformations and Power of Apache Spark.
