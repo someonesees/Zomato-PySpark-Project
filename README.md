@@ -6,8 +6,7 @@
 
 #### 1. Introduction
    - Project Title: Zomato Dataset Analysis
-   - Description: This project involves data loading, exploration, cleaning, and analysis of a Zomato dataset using PySpark. The goal is to derive insights and perform       
-                  various data transformations, including optimizing joins with broadcast joins and flattening nested JSON structures and using advance transformations like                     lead and lag.
+   - Description: This project involves data loading, exploration, cleaning, and analysis of a Zomato dataset using PySpark. The goal is to derive insights and perform             various data transformations, including optimizing joins with broadcast joins and flattening nested JSON structures and using advance transformations like                     lead and lag.
 
 #### 2. Prerequisites
    - Libraries and Tools:
