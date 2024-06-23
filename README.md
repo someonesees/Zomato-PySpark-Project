@@ -25,7 +25,7 @@
    - Select relevant features for the project (e.g., restaurant ID, location, cuisine, ratings).
    - Ensure categorical variables are encoded properly if needed (e.g., one-hot encoding for categorical features).
 
-#### 5. **Transformations**
+### 5. **Transformations**
 ##### 5.1. Flattening the nested JSON
    - Transform the nested JSON structure into a flat DataFrame to simplify data processing and analysis by converting nested fields into separate columns.
    - Utilize PySpark functions to recursively extract and flatten nested fields, ensuring that each nested field is accessible as a top-level column in the resulting DataFrame.
